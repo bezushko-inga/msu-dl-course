@@ -1,41 +1,13 @@
 # Segmentation results
 
+The postprocessing included: removal of small objects, removal of small holes, and binary closing. This helped eliminate segmentation artifacts and holes, smooth out corners, and obtain cleaner masks, leading to an improvement in IoU and Dice Coefficient.
+
 
 ## I. UNet
-
-### 1. Cross-Entropy
-
-### 2. Dice Loss
-
-### 3. Cross-Entropy + Dice Loss
-
-### 4. 0.3 * Cross-Entropy + 0.7 * Dice Loss
-
-### 5. 0.7 * Cross-Entropy + 0.3 * Dice Loss
-
-
-
-## II. LinkNet
-
-
-### 1. Cross-Entropy
-
-### 2. Dice Loss
-
-### 3. Cross-Entropy + Dice Loss
-
-### 4. 0.3 * Cross-Entropy + 0.7 * Dice Loss
-
-### 5. 0.7 * Cross-Entropy + 0.3 * Dice Loss
-
-
-## III. Postprocessing
-
 
 | Parameter |  |
 |------------|---|
 batch_size | 8
-criterion | BCEWithLogitsLoss
 epochs | 20
 learning_rate | 0.001
 model | UNet
@@ -45,7 +17,13 @@ scheduler | CosineAnnealingLR
 threshold | 0.0
 with_postprocess | True
 
-The postprocessing included: removal of small objects, removal of small holes, and binary closing. This helped eliminate segmentation artifacts and holes, smooth out corners, and obtain cleaner masks, leading to an improvement in IoU and Dice Coefficient.
+### 1. Cross-Entropy
+
+### 2. Dice Loss
+
+### 3. Cross-Entropy + Dice Loss
+
+### 4. 0.3 * Cross-Entropy + 0.7 * Dice Loss
 
 - train-set masks
   
@@ -71,3 +49,32 @@ The postprocessing included: removal of small objects, removal of small holes, a
 ![4](assets/III-6.jpeg)
 
 ![5](assets/III-7.jpeg)
+
+
+### 5. 0.7 * Cross-Entropy + 0.3 * Dice Loss
+
+
+
+## II. LinkNet
+
+| Parameter |  |
+|------------|---|
+batch_size | 8
+epochs | 20
+learning_rate | 0.001
+model | LinkNet
+num_blocks | 3
+optimizer | Adam
+scheduler | CosineAnnealingLR
+threshold | 0.0
+with_postprocess | True
+
+### 1. Cross-Entropy
+
+### 2. Dice Loss
+
+### 3. Cross-Entropy + Dice Loss
+
+### 4. 0.3 * Cross-Entropy + 0.7 * Dice Loss
+
+### 5. 0.7 * Cross-Entropy + 0.3 * Dice Loss
