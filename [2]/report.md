@@ -27,11 +27,11 @@ with_postprocess | True
 
 - train-set masks
   
-![Predictions on train](assets/III-1.png)
+![Predictions on train](assets/I4-1.png)
 
 - test-set masks
 
-![Predictions on test](assets/III-2.png)
+![Predictions on test](assets/I4-2.png)
 
 | Split | Metric | Before | After | Improvement |
 |-------|--------|-------:|------:|------------:|
@@ -40,15 +40,15 @@ with_postprocess | True
 | Test  | Dice | 0.90778 | 0.91319 | +0.00541 |
 | Test  | IoU  | 0.83819 | 0.84733 | +0.00914 |
 
-![1](assets/III-3.jpeg)
+![1](assets/I4-3.jpeg)
 
-![2](assets/III-4.jpeg)
+![2](assets/I4-4.jpeg)
 
-![3](assets/III-5.jpeg)
+![3](assets/I4-5.jpeg)
 
-![4](assets/III-6.jpeg)
+![4](assets/I4-6.jpeg)
 
-![5](assets/III-7.jpeg)
+![5](assets/I4-7.jpeg)
 
 
 ### 5. 0.7 * Cross-Entropy + 0.3 * Dice Loss
