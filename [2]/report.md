@@ -20,8 +20,28 @@ with_postprocess | True
 ### 1. Cross-Entropy
 
 - train-set masks
+  
+![Predictions on train](assets/I1-1.png)
 
 - test-set masks
+
+![Predictions on test](assets/I1-2.png)
+| Split | Metric | Before | After | Improvement |
+|-------|--------|-------:|------:|------------:|
+| Train | Dice | 0.95031 | 0.95421 | +0.00390 |
+| Train | IoU  | 0.91174 | 0.91887 | +0.00713 |
+| Test  | Dice | 0.90954 | 0.91489 | +0.00535 |
+| Test  | IoU  | 0.84114 | 0.85031 | +0.00917 |
+
+![1](assets/I1-3.png)
+
+![2](assets/I1-4.png)
+
+![3](assets/I1-5.png)
+
+![4](assets/I1-6.png)
+
+![5](assets/I1-7.png)
 
 ### 2. Dice Loss
 
