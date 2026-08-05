@@ -26,6 +26,7 @@ with_postprocess | True
 - test-set masks
 
 ![Predictions on test](assets/I1-2.png)
+
 | Split | Metric | Before | After | Improvement |
 |-------|--------|-------:|------:|------------:|
 | Train | Dice | 0.95031 | 0.95421 | +0.00390 |
@@ -51,12 +52,14 @@ with_postprocess | True
 - test-set masks
 
 ![Predictions on test](assets/I2-2.png)
+
 | Split | Metric | Before | After | Improvement |
 |-------|--------|-------:|------:|------------:|
 | Train | Dice | 0.76426 | 0.76426 | +0.00000 |
 | Train | IoU  | 0.64118 | 0.64118 | +0.00000 |
 | Test  | Dice | 0.73991 | 0.73991 | +0.00000 |
 | Test  | IoU  | 0.60398 | 0.60398 | +0.00000 |
+
 ![1](assets/I2-3.png)
 
 ![2](assets/I2-4.png)
