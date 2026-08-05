@@ -19,9 +19,21 @@ with_postprocess | True
 
 ### 1. Cross-Entropy
 
+- train-set masks
+
+- test-set masks
+
 ### 2. Dice Loss
 
+- train-set masks
+
+- test-set masks
+  
 ### 3. Cross-Entropy + Dice Loss
+
+- train-set masks
+
+- test-set masks
 
 ### 4. 0.3 * Cross-Entropy + 0.7 * Dice Loss
 
@@ -53,7 +65,9 @@ with_postprocess | True
 
 ### 5. 0.7 * Cross-Entropy + 0.3 * Dice Loss
 
+- train-set masks
 
+- test-set masks
 
 ## II. LinkNet
 
